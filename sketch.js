@@ -281,6 +281,7 @@ function mouseReleased()
   count = 0;
   image_no++;
   if(image_no > image_no_max) image_no = 0;
+  userStartAudio();
   snd[image_no].setVolume(0.5);
   snd[image_no].playMode('restart');
 }
@@ -296,6 +297,7 @@ function touchEnded()
   count = 0;
   image_no++;
   if(image_no > image_no_max) image_no = 0;
+  userStartAudio();
   snd[image_no].setVolume(0.5);
   snd[image_no].playMode('restart');
 }
